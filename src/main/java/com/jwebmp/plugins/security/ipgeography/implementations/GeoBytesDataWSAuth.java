@@ -2,16 +2,18 @@ package com.jwebmp.plugins.security.ipgeography.implementations;
 
 import com.jwebmp.core.htmlbuilder.ContentSecurityPolicy;
 import com.jwebmp.guicedinjection.GuiceContext;
+import com.jwebmp.logger.LogFactory;
 import com.jwebmp.websockets.WebSocketsConfiguration;
 import com.jwebmp.websockets.services.IWebSocketAuthDataProvider;
-import lombok.extern.java.Log;
 
 import java.util.logging.Level;
+import java.util.logging.Logger;
 
-@Log
+
 public class GeoBytesDataWSAuth
 		implements IWebSocketAuthDataProvider<GeoBytesDataWSAuth>
 {
+	private static final Logger log = LogFactory.getLog("GeoBytesDataWSAuth");
 	@SuppressWarnings("unchecked")
 	@Override
 	public StringBuilder getJavascriptToPopulate()

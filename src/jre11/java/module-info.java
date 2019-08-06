@@ -9,8 +9,6 @@ module com.jwebmp.plugins.security.ipgeography {
 	requires com.jwebmp.interception;
 	requires com.jwebmp.websockets;
 
-	requires lombok;
-
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.security.ipgeography.IPGeographyPageConfigurator;
 	provides com.jwebmp.websockets.services.IWebSocketAuthDataProvider with com.jwebmp.plugins.security.ipgeography.implementations.GeoBytesDataWSAuth;
 	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.security.ipgeography.implementations.GeoBytesModuleExclusions;
