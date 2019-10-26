@@ -1,8 +1,8 @@
 package com.jwebmp.plugins.security.ipgeography.implementations;
 
 import com.jwebmp.core.htmlbuilder.ContentSecurityPolicy;
-import com.jwebmp.guicedinjection.GuiceContext;
-import com.jwebmp.logger.LogFactory;
+import com.guicedee.guicedinjection.GuiceContext;
+import com.guicedee.logger.LogFactory;
 import com.jwebmp.websockets.WebSocketsConfiguration;
 import com.jwebmp.websockets.services.IWebSocketAuthDataProvider;
 
