@@ -7,10 +7,10 @@ module com.jwebmp.plugins.security.ipgeography {
 	requires com.google.guice.extensions.servlet;
 	requires com.guicedee.guicedinjection;
 	requires com.jwebmp.interception;
-	requires com.jwebmp.websockets;
+	requires com.guicedee.guicedservlets.websockets;
 
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.security.ipgeography.IPGeographyPageConfigurator;
-	provides com.jwebmp.websockets.services.IWebSocketAuthDataProvider with com.jwebmp.plugins.security.ipgeography.implementations.GeoBytesDataWSAuth;
+	provides com.guicedee.guicedservlets.websockets.services.IWebSocketAuthDataProvider with com.jwebmp.plugins.security.ipgeography.implementations.GeoBytesDataWSAuth;
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.security.ipgeography.implementations.GeoBytesModuleExclusions;
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.security.ipgeography.implementations.GeoBytesModuleExclusions;
 

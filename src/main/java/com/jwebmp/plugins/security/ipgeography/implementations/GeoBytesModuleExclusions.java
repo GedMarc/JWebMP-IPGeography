@@ -28,7 +28,7 @@ public class GeoBytesModuleExclusions
 	public @NotNull Set<String> excludeModules()
 	{
 		Set<String> strings = new HashSet<>();
-		strings.add("com.jwebmp.websockets");
+		strings.add("com.guicedee.guicedservlets.websockets");
 		strings.add("com.jwebmp.plugins.security.ipgeography");
 
 		strings.add("org.apache.commons.io");

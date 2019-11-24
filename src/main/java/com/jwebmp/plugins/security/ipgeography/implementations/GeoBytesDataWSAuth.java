@@ -3,8 +3,8 @@ package com.jwebmp.plugins.security.ipgeography.implementations;
 import com.jwebmp.core.htmlbuilder.ContentSecurityPolicy;
 import com.guicedee.guicedinjection.GuiceContext;
 import com.guicedee.logger.LogFactory;
-import com.jwebmp.websockets.WebSocketsConfiguration;
-import com.jwebmp.websockets.services.IWebSocketAuthDataProvider;
+import com.guicedee.guicedservlets.websockets.WebSocketsConfiguration;
+import com.guicedee.guicedservlets.websockets.services.IWebSocketAuthDataProvider;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
