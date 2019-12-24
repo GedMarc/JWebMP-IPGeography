@@ -16,12 +16,14 @@
     <dependencies>
         <dependency>
             <groupId>com.jwebmp.core</groupId>
-            <artifactId>jwebmp-core</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>jwebmp-core</artifactId>
+            <type>jar</type>
+        </dependency>
         <dependency>
             <groupId>com.guicedee.servlets</groupId>
-            <artifactId>guiced-websockets</artifactId><type>jar</type>
-            </dependency>
+            <artifactId>guiced-websockets</artifactId>
+            <type>jar</type>
+        </dependency>
     </dependencies>
 
 </project>

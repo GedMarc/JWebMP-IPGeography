@@ -1,7 +1,12 @@
 package com.jwebmp.plugins.security.ipgeography;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class GeoData
+		extends JavaScriptPart<GeoData>
 {
 	private String ip;
 	private String isp;
@@ -38,6 +43,10 @@ public class GeoData
 	private String currencyName;
 	private Boolean success;
 	private Boolean cached;
+	@JsonProperty("localstorage")
+	private String localStorage;
+	@JsonProperty("sessionid")
+	private String sessionid;
 
 	public String getIp()
 	{
@@ -289,6 +298,28 @@ public class GeoData
 	public GeoData setCached(Boolean cached)
 	{
 		this.cached = cached;
+		return this;
+	}
+
+	public String getLocalStorage()
+	{
+		return localStorage;
+	}
+
+	public GeoData setLocalStorage(String localStorage)
+	{
+		this.localStorage = localStorage;
+		return this;
+	}
+
+	public String getSessionid()
+	{
+		return sessionid;
+	}
+
+	public GeoData setSessionid(String sessionid)
+	{
+		this.sessionid = sessionid;
 		return this;
 	}
 }

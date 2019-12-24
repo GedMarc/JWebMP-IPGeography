@@ -29,9 +29,9 @@ public class GeoBytesDataWSAuth
 			log.log(Level.WARNING, "Not in request scope for content security geodata policy update", e);
 		}
 		return new StringBuilder(" $.getJSON('https://json.geoiplookup.io', function(data) {" +
-		                         "        data.localstorage = jw.localstorage['jwamsmk'];" +
-		                         "        jw.websocket.newMessage('GeoData',data);" +
-		                         "    });");
+		                         "data.localstorage = jw.localstorage['jwamsmk'];" +
+		                         "jw.websocket.newMessage('GeoData',data);" +
+		                         "});");
 	}
 
 	@Override
