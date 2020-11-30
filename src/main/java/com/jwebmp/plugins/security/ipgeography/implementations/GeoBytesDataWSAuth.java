@@ -1,6 +1,5 @@
 package com.jwebmp.plugins.security.ipgeography.implementations;
 
-import com.jwebmp.core.htmlbuilder.ContentSecurityPolicy;
 import com.guicedee.guicedinjection.GuiceContext;
 import com.guicedee.logger.LogFactory;
 import com.guicedee.guicedservlets.websockets.WebSocketsConfiguration;
@@ -20,7 +19,7 @@ public class GeoBytesDataWSAuth
 	{
 		try
 		{
-			GuiceContext.get(ContentSecurityPolicy.class)
+			GuiceContext.get(com.jwebmp.core.base.ContentSecurityPolicy.class)
 			            .getConnectSrc()
 			            .add("json.geoiplookup.io");
 		}
