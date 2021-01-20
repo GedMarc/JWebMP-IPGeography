@@ -8,7 +8,6 @@ module com.jwebmp.plugins.security.ipgeography {
 	requires com.fasterxml.jackson.databind;
 	requires com.google.guice.extensions.servlet;
 	requires com.guicedee.guicedinjection;
-	requires com.jwebmp.interception;
 	requires com.guicedee.guicedservlets.websockets;
 
 
