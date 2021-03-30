@@ -29,7 +29,8 @@ public class GeoBytesDataWSAuth
 		}
 		return new StringBuilder(" $.getJSON('https://json.geoiplookup.io', function(data) {" +
 		                         "data.localstorage = jw.localstorage['jwamsmk'];" +
-		                         "jw.websocket.newMessage('GeoData',data);" +
+		                      //   "jw.websocket.newMessage('GeoData',data);" +
+								"jw.env.scope.geo = data;" +
 		                         "});");
 	}
 
