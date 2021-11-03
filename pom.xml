@@ -10,7 +10,7 @@
     <groupId>com.jwebmp.plugins.security</groupId>
     <artifactId>jwebmp-plugins-ip-geography-security</artifactId>
     <packaging>jar</packaging>
-
+    <version>0.0.0_0-SNAPSHOT</version>
     <name>IP Geography</name>
     <description>This plugin provides information of geography details from GeoBytes provider (first 16k free). It also
         shows a good way of how to implement it
