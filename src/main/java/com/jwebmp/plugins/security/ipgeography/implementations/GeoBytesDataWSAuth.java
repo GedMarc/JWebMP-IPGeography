@@ -1,7 +1,7 @@
 package com.jwebmp.plugins.security.ipgeography.implementations;
 
 import com.guicedee.guicedinjection.GuiceContext;
-import com.guicedee.logger.LogFactory;
+
 import com.guicedee.guicedservlets.websockets.WebSocketsConfiguration;
 import com.guicedee.guicedservlets.websockets.services.IWebSocketAuthDataProvider;
 
